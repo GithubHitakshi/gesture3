@@ -1,0 +1,38 @@
+#camera{
+    border: 2px black dashed;
+    width: 350px;
+    height: 300px;
+}
+#result{
+    border: 2px black dashed;
+    width: 350px;
+    height: 300px;
+}
+.container{
+    width: px;
+    height: 80px;
+}
+
+body
+{
+background-size: cover;
+
+}
+span
+{
+  font-size: 30px;
+}
+h5{
+    font-style: italic;
+    font-size: 20px;
+    background-color: rgb(249, 201, 201);
+    border-radius: 3px;
+}
+h4{
+    font-family:sans-serif;
+    font-style:oblique;
+}
+h3{
+    font-family:fantasy;
+    font-style:oblique;
+}

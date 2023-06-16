@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Gesture Guesser</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body background="https://wallpapers.com/images/featured/8kgg4q470wnbyz3x.jpg">
+    <center>
+        <div class="container">
+            <h1 class="btn btn-success">
+                GESTURE GUESS
+                <br>
+                <span>&#9996;</span>
+                <span>&#129310;</span>
+                <span>&#129304;</span>
+                <span>&#128076;</span>
+                <span>&#128077;</span>
+                <span>&#128078;</span>
+            </h1>
+        </div>
+
+            <br> <br>
+            <b style="color: blueviolet; font-size: 30px;">Let me GUESS your HAND GESTURE..!!</b>
+            <br> <br> <br> 
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h3>Camera</h3>
+                <br>
+                <div id="camera"></div>
+                <h4 style="color: red;">Show your HAND GESTURE here</h4>
+                <br><br>
+                <button onclick="take_snapshot()" class="btn btn-primary">Let's Capture</button>
+            </div>
+
+            <br>
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h5>Prediction about your GESTURE</h5>
+                <br> <br>
+                <h3 id="gesture1"></h3>
+                <h1 id="gesture"></h1>
+            </div>
+
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <h3>Result</h3>
+                <br>
+                <div id="result"></div>
+                <h4 style="color: red;">Your HAND GESTURE pic</h4>
+                <br><br>
+                <button onclick="identify()" class="btn btn-primary">Let's Identify</button>
+
+            </div>
+
+    </center>
+    <script src="script.js"></script>
+</body>
+</html>
